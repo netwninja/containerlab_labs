@@ -3,4 +3,4 @@
 
 ### Topology
 
-<img src="docs/rr_top.png" width="128"/>
+![LAB Topology](docs/rr_top.png)
