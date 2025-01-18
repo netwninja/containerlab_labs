@@ -3,4 +3,4 @@
 
 ### Topology
 
-![LAB TOPOLOGY](docs/rr_topo.png)
+!(docs/rr_top.png)
