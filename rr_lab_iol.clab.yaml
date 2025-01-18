@@ -1,0 +1,36 @@
+name:  rr_lab_iol
+topology:
+  nodes:
+    R1:
+     kind: cisco_iol
+     image: vrnetlab/cisco_iol:17.15.01
+     startup-config: R1.cfg
+    R2:
+     kind: cisco_iol
+     image: vrnetlab/cisco_iol:17.15.01
+     startup-config: R2.cfg
+    R3:
+     kind: cisco_iol
+     image: vrnetlab/cisco_iol:17.15.01
+     startup-config: R3.cfg
+    R4:
+     kind: cisco_iol
+     image: vrnetlab/cisco_iol:17.15.01
+     startup-config: R4.cfg
+    R5:
+     kind: cisco_iol
+     image: vrnetlab/cisco_iol:17.15.01
+     startup-config: R5.cfg
+    R6:
+     kind: cisco_iol
+     image: vrnetlab/cisco_iol:17.15.01
+     startup-config: R6.cfg
+
+  links:
+    - endpoints: ["R1:Ethernet0/1","R2:Ethernet0/1"]
+    - endpoints: ["R2:Ethernet0/2","R4:Ethernet0/2"]
+    - endpoints: ["R2:Ethernet0/3","R5:Ethernet0/3"]
+    - endpoints: ["R2:Ethernet1/1","R3:Ethernet1/1"]
+    - endpoints: ["R3:Ethernet0/1","R4:Ethernet0/1"]
+    - endpoints: ["R3:Ethernet0/2","R5:Ethernet0/2"]
+    - endpoints: ["R3:Ethernet0/3","R6:Ethernet0/3"]
