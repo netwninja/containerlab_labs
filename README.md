@@ -2,3 +2,5 @@
 
 
 ### Topology
+
+![LAB TOPOLOGY](docs/rr_topo.png)
