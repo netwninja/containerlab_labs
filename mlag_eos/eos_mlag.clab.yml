@@ -1,0 +1,15 @@
+name: eos_mlag
+
+topology:
+  nodes:
+    ceos1:
+      kind: ceos
+      image: ceos:4.32.0F
+      startup-config: ceos1.cfg 
+    ceos2:
+      kind: ceos
+      image: ceos:4.32.0F
+      startup-config: ceos2.cfg
+  links:
+    - endpoints: ["ceos1:eth47", "ceos2:eth47"]
+    - endpoints: ["ceos1:eth48", "ceos2:eth48"]
